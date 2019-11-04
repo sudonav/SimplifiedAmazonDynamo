@@ -1,7 +1,8 @@
 <p align="center">Large Scale Distributed Systems</br>CSE586 - Spring 2019</br>Simplified Amazon Dynamo - Key-value Storage</p>
--------
 
-![Img_4]
+--------------------------
+
+![Img_4](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/DynamoDB-Amazon-Web-Services.jpg)(https://aws.amazon.com/dynamodb/)
 -------
 
 Goal
@@ -38,6 +39,7 @@ This project implements a [**Content Provider**](https://developer.android.com/g
   
   Amazon Dynamo design guidelines
 -------------------------------------------------
+![Img_4](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/ring.png)
 This project implements **simplified version of Amazon Dynamo** based on below design guidelines: - 
 
 **1. Membership**
