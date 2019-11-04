@@ -2,7 +2,7 @@
 
 --------------------------
 
-![Img_4](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/DynamoDB-Amazon-Web-Services.jpg)(https://aws.amazon.com/dynamodb/)
+![Img_2](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/DynamoDB-Amazon-Web-Services.jpg)(https://aws.amazon.com/dynamodb/)
 -------
 
 Goal
