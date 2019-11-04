@@ -125,7 +125,7 @@ Credits
 -------
 This project contains scripts and other related material that is developed by [**Networked Systems Research Group**](https://nsr.cse.buffalo.edu) at **[University of Buffalo, The State University of New York](http://www.cse.buffalo.edu)**.
 
-I thank [**Professor Steve ko**](https://nsr.cse.buffalo.edu/?page_id=272) for delivering the Course ([**CSE 586**] (http://www.cse.buffalo.edu/~stevko/courses/cse486/spring19/)) that helped me learn the skills of Large Scale Distributed Systems and develop a simplified version of **Amazon Dynamo** - a highly available replicated key-value storage.
+I thank [**Professor Steve ko**](https://nsr.cse.buffalo.edu/?page_id=272) for delivering the Course [**CSE 586**](http://www.cse.buffalo.edu/~stevko/courses/cse486/spring19/) that helped me learn the skills of Large Scale Distributed Systems and develop a simplified version of **Amazon Dynamo** - a highly available replicated key-value storage.
 
 
 Developer
@@ -138,3 +138,9 @@ License
 ----------
 Copyright {2019} 
 {Navaneethakrishnan Ramanathan nramanat@buffalo.edu} 
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
