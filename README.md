@@ -1,7 +1,9 @@
 <p align="center">Large Scale Distributed Systems</br>CSE586 - Spring 2019</br>Simplified Amazon Dynamo - Key-value Storage</p>
 -------
+
 ![Img_4]
 -------
+
 Goal
 -------
 Implement a Dynamo styled key-value storage which is **highly available and linearizability (or sometimes called strong consistency) guarantees**. The system should have the ability to successfully undergo **concurrent read and write operations** and should provide consistent results even under **node failures**.
