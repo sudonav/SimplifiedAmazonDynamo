@@ -2,7 +2,7 @@
 -------
 ![Img_4]
 -------
-<h3>Goal</h3>
+Goal
 -------
 Implement a Dynamo styled key-value storage which is **highly available and linearizability (or sometimes called strong consistency) guarantees**. The system should have the ability to successfully undergo **concurrent read and write operations** and should provide consistent results even under **node failures**.
 
@@ -40,33 +40,23 @@ This project implements **simplified version of Amazon Dynamo** based on below d
 
 **1. Membership**
 > a) Just as the original Dynamo, every node can know every other node. This means that each node knows all other nodes in the system and also knows exactly which partition belongs to which node.
-	
 > b) Any node can forward a request to the correct node without using a ring-based routing.
 
 **2. Request routing**
 > a) Unlike Chord, each Dynamo node knows all other nodes in the system and also knows exactly which partition belongs to which node.
-
 > b) Under no failures, a request for a key is directly forwarded to the coordinator (i.e., the successor of the key), and the coordinator should be in charge of serving read/write operations.
 
 **2. Quorum replication**
 > a) Implement [**Quorum**](https://en.wikipedia.org/wiki/Quorum_(distributed_computing)) based replication that provide **Linearizability**.
-
 > b) Note that the **original design does not provide linearizability**. We have adapted our implementation.
-
 > c) **The replication degree N is 3**. This means that given a key, the key’s coordinator as well as the 2 successor nodes in the Dynamo ring store the key.
-
 > d) **Both the reader quorum size R and the writer quorum size W is 2**. It means that the coordinator for a get/put request **always contact other two nodes** and get a vote from each (i.e., an acknowledgement for a write, or a value for a read).
-
 > f) For write operations, all objects are **versioned** in order to distinguish stale copies from the most recent copy.
-
 > g) For read operations, if the readers in the reader quorum have different versions of the same object, the coordinator **picks the most recent version** and returns it.
-
 
 **3. Failure handling**
 > a) Handling failures is done very carefully because there can be many corner cases to consider and cover.
-
 > d) We cannot rely on socket creation or connect status to determine if a node has failed. Due to the Android emulator networking setup, it is not safe to rely on socket creation or connect status to judge node failures.
-
 > e) When a coordinator for a request fails and it does not respond to the request, **its successor can be contacted next for the request**.
 
 
@@ -79,19 +69,15 @@ The  [**Grader**](https://github.com/sudonav/SimplifiedAmazonDynamo/tree/master/
 
 **2. Testing concurrent ops with different keys**
 > a) This phase will test if your implementation can handle concurrent operations under no failure.
-
 > b) The tester will use independent (key, value) pairs inserted/queried concurrently on all the nodes.
 
 **3. Testing concurrent ops with same keys**
 > a) This phase will test if your implementation can handle concurrent operations with same keys under no failure.
-
 > b) The tester will use the same set of (key, value) pairs inserted/queried concurrently on all the nodes.
 
 **4. Testing one failure**
 > a) This phase will test one failure with every operation.
-
 > b) One node will crash before operations start. After all the operations are done, the node will recover.
-
 > c) This will be repeated for each and every operation.
 
 **5. Testing concurrent operations with one failure**
@@ -99,9 +85,7 @@ The  [**Grader**](https://github.com/sudonav/SimplifiedAmazonDynamo/tree/master/
 
 **6. Testing concurrent operations with one consistent failure**
 > a) This phase will crash one node at a time consistently, i.e., one node will crash then recover, and another node will crash and recover, etc.
-
 > b) There will be a brief period of time in between the crash-recover sequence.
-
 
 Running the Grader/Testing Program
 -----------------------------------------
