@@ -2,7 +2,7 @@
 
 --------------------------
 
-![Img_2](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/DynamoDB-Amazon-Web-Services.jpg)(https://aws.amazon.com/dynamodb/)
+![DynamoDB](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/DynamoDB-Amazon-Web-Services.jpg)
 -------
 
 Goal
@@ -40,6 +40,7 @@ This project implements a [**Content Provider**](https://developer.android.com/g
   Amazon Dynamo design guidelines
 -------------------------------------------------
 ![Img_4](https://github.com/sudonav/SimplifiedAmazonDynamo/blob/master/Images/ring.png)
+
 This project implements **simplified version of Amazon Dynamo** based on below design guidelines: - 
 
 **1. Membership**
@@ -121,6 +122,9 @@ Developer
 Navaneethakrishnan Ramanathan nramanat@buffalo.edu</br>
 [LinkedIn](https://www.linkedin.com/in/nramanat/)
 
+DynamoDB
+---------
+Check out Amazon's [**Dynamodb**](https://aws.amazon.com/dynamodb/)
 
 License
 ----------
